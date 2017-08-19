@@ -1,0 +1,39 @@
+Lekcja 1 
+
+Cztery różne znaczniki 
+	* znaczniki kanoniczne to tradycyjne znaczniki otwierające <?php  ?> zamykające.
+	* SGML, skrócone znaczniki <? ?> ale trzeba włączyć w php.ini short_open_tag = On.
+	* ASP, <% %> tutaj należy włączyć asp_tags = On bez PHP 7
+	* Znaczniki skryptów html <script language = "php"> </script>
+
+Komentarze
+	blokowe /* */
+	jednowierszowy //
+	jednowierszowy uniksowy #
+
+Wyświetlanie informacji
+	echo "",
+	echo ("")
+	echo zmienna1 . zmienna2 . itd
+	Jeśli mamy " " i w tym jeszcze cudzysłów to musimy przed nimi wstawić \ czyli echo "<h2 style = \"color: blue\">"; lub zamist cudzysłowu używamy apostrofu
+
+Łączenie skryptów
+	instrukcja  include jest w rzeczywistości traktowana jako ?> tresc pliku nazwa_pliku <?php dlatego trzeba używać znaczniki <?php i ?>
+	instrukcja require jesli nie ma pliku lub nie ma dostępu w przypadku include jest ostrzeżenie i kontunuowanie działania w require jest błąd i skrypt się zakończy.
+
+Lekcja 2
+	Rodzaje zmiennych
+		* typy skalarne - czyli proste (boolean, string, float, integer). String jesli chcemy apostrof popprzedzamy go \ a jesli chcemy \ to pisząc \\ uzyskamy \
+			herecdoc string z indetyfikatorem np.
+				$napis = <<<ID1
+				Tutaj rozpoczyna się napis.
+				ID1;
+			nowdoc jest to praktycznie to samo tyle że indetyfikator jest wzięty w apostrof dzięki temu może być Stringiem
+		* typy złożone tablicowe i obiekt
+		* typy specjalne	
+			- resource typ wskazuje że zmienna przechowuje odwolanie do zasobu zew.
+			- null czyli jest pusta
+
+	
+
+
